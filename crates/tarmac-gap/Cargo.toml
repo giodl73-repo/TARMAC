@@ -1,0 +1,12 @@
+[package]
+name = "tarmac-gap"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+thiserror = "1"
+tarmac-network = { path = "../tarmac-network" }
+tarmac-corpus = { path = "../tarmac-corpus" }
+tarmac-score = { path = "../tarmac-score" }
+tarmac-tier = { path = "../tarmac-tier" }

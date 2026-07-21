@@ -1,0 +1,10 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/tarmac-network",
+    "crates/tarmac-corpus",
+    "crates/tarmac-score",
+    "crates/tarmac-tier",
+    "crates/tarmac-gap",
+    "crates/tarmac-cli",
+]
