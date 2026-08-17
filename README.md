@@ -43,6 +43,16 @@ TARMAC is public and open to use as a reference model for aviation-network
 evidence discipline. To scope the first public run or contribute source
 surfaces, start with [`docs/adoption/README.md`](docs/adoption/README.md).
 
+### Reuse boundary
+
+TARMAC is intentionally a domain-specific reference implementation, not a
+shared portfolio library. Infrastructure 2.0 repositories share an
+evidence-first method and crate topology, but TARMAC's airport, route, slot,
+weather, and market types belong here. Reuse the method by comparison, not
+through cross-repository crate dependencies. Extract a shared contract only
+when a named downstream adopter needs the same stable type or schema in at
+least two domains.
+
 ## Why this matters
 
 Adding a gate, route, or runway does not automatically repair missed
