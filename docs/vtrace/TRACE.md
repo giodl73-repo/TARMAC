@@ -5,31 +5,30 @@
 Repo: TARMAC
 
 VTRACE adoption scope: connect TARMAC's accepted requirements to mission needs, CONOPS
-scenarios, controlled specification items, future design surfaces, work packages,
-verification, validation, and evidence. TARMAC is greenfield: design elements, work
-packages, and evidence are **planned/deferred**, and this matrix exposes those gaps honestly
-rather than implying built surfaces exist.
+scenarios, controlled specification items, design surfaces, work packages, verification,
+validation, and evidence. TARMAC now has fixture-backed implementation evidence; the trace
+still distinguishes that from a cited public aviation-network run.
 
 ## Requirement Trace
 
 | Req ID | Parent Need / Constraint / Scenario | Specification Item | Design Element (planned) | Work Package | Verification (planned) | Validation | Evidence | Status |
 |---|---|---|---|---|---|---|---|---|
-| REQ-001 | NEED-001 / CON-003 / OPS-001 | SPEC-002 / SPEC-NF-001 | corpus + data layer | deferred → IMPL_PLAN | VER-001 / command review | OPS-001 | future EVID-001 | accepted |
-| REQ-002 | NEED-002 / NEED-003 / CON-001 / CON-004 / OPS-001 / OPS-004 | SPEC-003 | corpus + data layer | deferred → IMPL_PLAN | VER-002 / artifact inspection | OPS-001 / OPS-004 | future EVID-002 | accepted |
-| REQ-003 | NEED-001 / CON-003 / CON-004 / OPS-001 | SPEC-009 | `data/sources.md` registry | deferred → IMPL_PLAN | VER-003 / citation audit | OPS-001 | future EVID-003 | accepted |
-| REQ-004 | NEED-004 / CON-002 / OPS-001 | SPEC-001 | air-network kernel (`tarmac-network`) | deferred → IMPL_PLAN | VER-004 / schema check | OPS-001 | future EVID-004 | accepted |
-| REQ-005 | NEED-004 / NEED-008 / CON-002 / CON-004 / CON-007 / OPS-001 | SPEC-001 / SPEC-013 / SPEC-NF-003 | kernel + corpus layer | deferred → IMPL_PLAN | VER-005 / gate / data inspection | OPS-001 | future EVID-005 | accepted |
-| REQ-006 | NEED-002 / NEED-005 / OPS-002 | SPEC-004 / IF-003 | scoring layer | deferred → IMPL_PLAN | VER-006 / calibration record | OPS-002 | future EVID-006 | accepted |
-| REQ-007 | NEED-002 / CON-001 / OPS-003 / OPS-006 | SPEC-005 / SPEC-DB-01 | scoring + tier (demand basis) | deferred → IMPL_PLAN | VER-007 / analysis / inspection | OPS-003 | future EVID-007 | accepted |
-| REQ-008 | NEED-006 / CON-001 / OPS-003 | SPEC-006 | gap layer | deferred → IMPL_PLAN | VER-008 / gap inspection / review | OPS-003 | future EVID-008 | accepted |
+| REQ-001 | NEED-001 / CON-003 / OPS-001 | SPEC-002 / SPEC-NF-001 | corpus + data layer | WP-002/WP-006 | VER-001 / command review | OPS-001 | EVID-001 / EVID-CLI-001 | fixture_implemented |
+| REQ-002 | NEED-002 / NEED-003 / CON-001 / CON-004 / OPS-001 / OPS-004 | SPEC-003 | corpus + data layer | WP-002 | VER-002 / artifact inspection | OPS-001 / OPS-004 | EVID-002 | fixture_implemented |
+| REQ-003 | NEED-001 / CON-003 / CON-004 / OPS-001 | SPEC-009 | `data/sources.md` registry | WP-002 | VER-003 / citation audit | OPS-001 | EVID-003 | fixture_implemented |
+| REQ-004 | NEED-004 / CON-002 / OPS-001 | SPEC-001 | air-network kernel (`tarmac-network`) | WP-001 | VER-004 / schema check | OPS-001 | EVID-004 | fixture_implemented |
+| REQ-005 | NEED-004 / NEED-008 / CON-002 / CON-004 / CON-007 / OPS-001 | SPEC-001 / SPEC-013 / SPEC-NF-003 | kernel + corpus layer | WP-001/WP-002 | VER-005 / gate / data inspection | OPS-001 | EVID-005 | fixture_implemented |
+| REQ-006 | NEED-002 / NEED-005 / OPS-002 | SPEC-004 / IF-003 | scoring layer | WP-003 | VER-006 / calibration record | OPS-002 | EVID-006 | fixture_implemented |
+| REQ-007 | NEED-002 / CON-001 / OPS-003 / OPS-006 | SPEC-005 / SPEC-DB-01 | scoring + tier (demand basis) | WP-001/WP-004 | VER-007 / analysis / inspection | OPS-003 | EVID-007 | fixture_implemented |
+| REQ-008 | NEED-006 / CON-001 / OPS-003 | SPEC-006 | gap layer | WP-005 | VER-008 / gap inspection / review | OPS-003 | EVID-008 | fixture_implemented |
 | REQ-009 | NEED-005 / CON-001 / OPS-004 | SPEC-007 | review layer (`.roles`) | deferred → IMPL_PLAN | VER-009 / review inspection | OPS-004 | future EVID-009 | accepted |
 | REQ-010 | NEED-003 / NEED-005 / OPS-004 | SPEC-007 | review layer (`.roles`) | deferred → IMPL_PLAN | VER-010 / role review | OPS-004 | future EVID-010 | accepted |
 | REQ-011 | NEED-003 / CON-006 / OPS-004 | SPEC-008 | public docs + editorial | deferred → IMPL_PLAN | VER-011 / editorial review | OPS-004 | future EVID-011 | accepted |
 | REQ-012 | CON-005 / OPS-005 | SPEC-010 | child repo / git workflow | deferred → IMPL_PLAN | VER-012 / git status | OPS-005 | future EVID-012 | accepted |
 | REQ-013 | NEED-005 / OPS-005 | SPEC-010 | wave ledger / `.roles` | deferred → IMPL_PLAN | VER-013 / wave ledger / review | OPS-005 | this matrix + pulses | accepted |
-| REQ-014 | NEED-007 / CON-002 / OPS-006 | SPEC-011 / IF-004 | tier/SLA layer | deferred → IMPL_PLAN | VER-014 / schema check | OPS-006 | future EVID-014 | accepted |
-| REQ-015 | NEED-007 / NEED-002 / NEED-006 / OPS-003 / OPS-006 | SPEC-012 / DIM-13 | tier/SLA + gap layer | deferred → IMPL_PLAN | VER-015 / gate / gap inspection | OPS-003 / OPS-006 | future EVID-015 | accepted |
-| REQ-016 | NEED-008 / CON-007 / OPS-007 | SPEC-013 / SCALE-01..03 / IF-001 | corpus scale tags + gap scale filter | deferred → IMPL_PLAN | VER-016 / schema check / gate | OPS-007 | future EVID-016 | accepted |
+| REQ-014 | NEED-007 / CON-002 / OPS-006 | SPEC-011 / IF-004 | tier/SLA layer | WP-004 | VER-014 / schema check | OPS-006 | EVID-014 | fixture_implemented |
+| REQ-015 | NEED-007 / NEED-002 / NEED-006 / OPS-003 / OPS-006 | SPEC-012 / DIM-13 | tier/SLA + gap layer | WP-004/WP-005 | VER-015 / gate / gap inspection | OPS-003 / OPS-006 | EVID-015 | fixture_implemented |
+| REQ-016 | NEED-008 / CON-007 / OPS-007 | SPEC-013 / SCALE-01..03 / IF-001 | corpus scale tags + gap scale filter | WP-002/WP-005 | VER-016 / schema check / gate | OPS-007 | EVID-016 | fixture_implemented |
 
 ## Cross-Stage Coverage
 
@@ -39,8 +38,8 @@ rather than implying built surfaces exist.
 | Mission constraints | CON-001..007 | REQ-001..016 | covered | Constraints attached where they affect evidence, identity, scope, repo ops, or scale. |
 | CONOPS scenarios | OPS-001..007 | REQ-001..016 | covered | Every scenario drives at least one accepted requirement. |
 | Requirements | REQ-001..016 | SPEC-001..013 / SPEC-NF-001..003 / IF-001..004 | covered | Specification coverage accepted in `SPECIFICATION_BASELINE.md`. |
-| Specifications | SPEC-001..013 | `VER-*` / `EVID-*` | planned | Verification IDs defined in `VERIFICATION.md`; evidence is greenfield-pending. |
-| Requirements / specs | REQ-* / SPEC-* | `WP-*` | deferred | No work packages yet; implementation planning follows the minimum slice. |
+| Specifications | SPEC-001..013 | `VER-*` / `EVID-*` | fixture covered | Verification IDs defined in `VERIFICATION.md`; public-claim evidence remains L2-pending. |
+| Requirements / specs | REQ-* / SPEC-* | `WP-*` | fixture covered | WP-001..006 have current workspace evidence. |
 
 ## Unknowns And Deferrals Trace
 
@@ -59,11 +58,10 @@ rather than implying built surfaces exist.
 
 ## Honest Gaps (no faked evidence)
 
-- No `VER-*` evidence exists yet; verification methods are named but unrun. The next stage
-  (`VERIFICATION.md`) defines `VER-*`; actual `EVID-*` accrue only once implementation work
-  packages run.
-- No `WP-*`, `ARCHITECTURE`, `INTERFACES`, or `CODE_RIGOR` artifacts exist yet; the trace
-  marks these `deferred`, not satisfied.
+- Fixture `VER-*` evidence exists for the implementation baseline, but no cited public
+  aviation-network corpus run has completed L2 validation.
+- Public claims require corpus regeneration, tier-SLA/gap outputs, and role review on the
+  exact cited output packet.
 - Dimension weights, SLA thresholds, and scale nesting are provisional; the trace does not
   claim calibrated values.
 
@@ -78,6 +76,6 @@ rather than implying built surfaces exist.
 | Operations & ATC Officer | REQ-007/REQ-015 trace the demand basis and tier-SLA gating through SPEC-005/SPEC-012. | pass |
 | Aviation Planner | NEED-007/008 trace cleanly to REQ-014/015/016 and SPEC-011/012/013. | pass |
 
-Fixed-point note: no actionable finding required a change; the matrix's value is exposing the
-greenfield gaps (no `WP-*`/`EVID-*` yet), recorded as `deferred`/`planned` rather than
-fabricated. No unresolved critical/major finding.
+Fixed-point note: PITFALL review found stale greenfield wording after the implementation
+baseline landed. This trace now records fixture implementation evidence without promoting it
+to a public aviation-network claim.

@@ -16,12 +16,12 @@ evidence back into the VTRACE trace.
 
 | Pulse | Work Package | Status | Outcome |
 |------:|--------------|--------|---------|
-| 01 | WP-001 `tarmac-network` | pending | Air-network kernel: identity, connectivity, centrality, capacity/delay helpers, typed demand basis. |
-| 02 | WP-002 `tarmac-corpus` | pending | Corpus model + scale/market tags + schema + sources + evidence labels. |
-| 03 | WP-003 `tarmac-score` | pending | Dimension scoring DIM-01..13 + rubric record. |
-| 04 | WP-004 `tarmac-tier` | pending | Tier T1–T4 + SLA conformance + tier-SLA gap. |
-| 05 | WP-005 `tarmac-gap` | pending | Gap analysis (scale-filtered) + null result. |
-| 06 | WP-006 `tarmac-cli` | pending | CLI orchestration (`--scale`) + reproducible artifacts. |
+| 01 | WP-001 `tarmac-network` | complete_fixture | Air-network kernel: identity, connectivity, centrality, capacity/delay helpers, typed demand basis. |
+| 02 | WP-002 `tarmac-corpus` | complete_fixture | Corpus model + scale/market tags + schema + sources + evidence labels. |
+| 03 | WP-003 `tarmac-score` | complete_fixture | Dimension scoring DIM-01..13 + rubric record. |
+| 04 | WP-004 `tarmac-tier` | complete_fixture | Tier T1-T4 + SLA conformance + tier-SLA gap. |
+| 05 | WP-005 `tarmac-gap` | complete_fixture | Gap analysis (scale-filtered) + null result. |
+| 06 | WP-006 `tarmac-cli` | complete_fixture | CLI orchestration (`--scale`) + reproducible artifacts. |
 
 ## Success criteria
 
@@ -30,3 +30,17 @@ evidence back into the VTRACE trace.
   `cargo test --workspace`) after every pulse.
 - `proof check .` stays clean.
 - VTRACE trace/verification rows updated as each WP closes.
+
+## PITFALL Closeout
+
+Portfolio PITFALL adoption on 2026-08-23 found stale implementation-wave and VTRACE rows
+that still described the Rust workspace as pending greenfield work. The current fixture
+workspace passes:
+
+- `cargo fmt --all -- --check`
+- `cargo clippy --workspace --all-targets -- -D warnings`
+- `cargo test --workspace --locked` (34 tests)
+- `cargo run -p tarmac-cli -- --help`
+
+The remaining risk is L2 evidence: fixture results must not be promoted as a public
+aviation-network finding without a cited corpus run and role review on the output packet.

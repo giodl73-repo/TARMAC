@@ -45,9 +45,9 @@ implementer) treats them as exit criteria, not aspirations.
 
 | Evidence ID | Constraint IDs | Command / Review | Result | Evidence Pointer |
 |---|---|---|---|---|
-| EVID-CR-001 | CR-005 | `cargo fmt --check` | pending | per work package |
-| EVID-CR-002 | CR-005, CR-006 | `cargo clippy -- -D warnings` | pending | per work package |
-| EVID-CR-003 | CR-004 | `cargo test` | pending | per work package |
+| EVID-CR-001 | CR-005 | `cargo fmt --all -- --check` | passed | current workspace |
+| EVID-CR-002 | CR-005, CR-006 | `cargo clippy --workspace --all-targets -- -D warnings` | passed | current workspace |
+| EVID-CR-003 | CR-004 | `cargo test --workspace --locked` (34 tests) | passed_fixture | current workspace |
 
 ## Role Review Notes
 
@@ -58,5 +58,6 @@ implementer) treats them as exit criteria, not aspirations.
 | Scope Keeper | The scale tailoring rule makes scale a typed enum and cross-scale ops explicit. | pass |
 | Citation Auditor | CR-007 makes label/source/scale preservation a hard invariant. | pass |
 
-Fixed-point note: no actionable finding required a change. Constraints are credible and
-command-backed. No unresolved critical/major finding.
+Fixed-point note: PITFALL review updated stale pending evidence after the implementation
+baseline landed. Constraints are now command-backed for the current fixture workspace; public
+aviation claims still require L2 corpus evidence.
