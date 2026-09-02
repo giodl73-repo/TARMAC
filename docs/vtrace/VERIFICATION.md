@@ -21,9 +21,9 @@ aviation-network finding; public claims still require a cited corpus run and rol
 | REQ-006 | calibration record | `cargo test --workspace --locked` score/rubric tests | rubric changes are versioned and justified | passed_fixture | EVID-006 |
 | REQ-007 | analysis / inspection | `cargo test --workspace --locked` demand-basis tests | peak-vs-average and IMC-vs-VMC basis named on each claim | passed_fixture | EVID-007 |
 | REQ-008 | gap inspection / review | `cargo test --workspace --locked` null-result tests | null result recorded, no manufactured gap | passed_fixture | EVID-008 |
-| REQ-009 | review inspection | confirm parliament + editorial gate ran on a promoted claim | review records exist with dispositions | pass_with_risk | EVID-009 (panel exists, not yet exercised on a corpus claim) |
-| REQ-010 | role review | confirm demand/capacity/delay/resilience/access/competition/environment/cost/slot lenses represented | stakeholder lenses present in `.roles/` and applied | pass_with_risk | EVID-010 (`.roles/` panel built) |
-| REQ-011 | editorial review | inspect public claims for scope boundary | outputs framed as research/tooling/conceptual design | pass_with_risk | EVID-011 (`README`/`PRODUCT_PLAN`/`MISSION` non-goals) |
+| REQ-009 | review inspection | confirm parliament + editorial gate ran on a promoted claim | review records exist with dispositions | pass_with_risk | EVID-009 / EVID-PF-05 (panel exists; first public run release boundary blocks promotion until exercised) |
+| REQ-010 | role review | confirm demand/capacity/delay/resilience/access/competition/environment/cost/slot lenses represented | stakeholder lenses present in `.roles/` and applied | pass_with_risk | EVID-010 / EVID-PF-05 (`.roles/` panel built and boundary names required roles) |
+| REQ-011 | editorial review | inspect public claims for scope boundary | outputs framed as research/tooling/conceptual design | pass_with_risk | EVID-011 / EVID-PF-05 (`README`/adoption boundary blocks public finding promotion) |
 | REQ-012 | git inspection | `git status --short`; confirm no TRACKER pointer touched | TARMAC changes stay in the child repo | passed | EVID-012 |
 | REQ-013 | wave ledger / review | inspect wave ledger + pulses for one-at-a-time discipline | each VTRACE stage settled to a fixed point in sequence | passed | EVID-013 |
 | REQ-014 | schema check / inspection | `cargo test --workspace --locked` tier tests | every element classified T1–T4 with declared SLA | passed_fixture | EVID-014 |
@@ -55,7 +55,7 @@ cargo run -p tarmac-cli -- --help
 |---|---|---|---|
 | L0 | Fast doc/sanity for the active VTRACE stage. | `proof check .`, `git diff --check` | passed |
 | L1 | Full repo confidence before push. | L0 + `cargo fmt --all -- --check`, `cargo clippy --workspace --all-targets -- -D warnings`, `cargo test --workspace --locked`, `cargo run -p tarmac-cli -- --help` | passed |
-| L2 | Readiness proof before a public claim. | cited corpus regeneration + `tier-sla --gate` + scale-filtered gap + role review | pending first public run |
+| L2 | Readiness proof before a public claim. | cited corpus regeneration + `tier-sla --gate` + scale-filtered gap + role review + first public run release boundary | pass_with_risk (fixture baseline exists; public finding promotion blocked until cited run evidence and role dispositions are recorded) |
 
 ## Evidence Ledger
 
@@ -65,6 +65,7 @@ cargo run -p tarmac-cli -- --help
 | EVID-012 | command | `git status --short` (standalone child repo) | REQ-012 | passed |
 | EVID-013 | review | `context/waves/2026-06-26-vtrace-foundation/` ledger + pulses | REQ-013 | passed |
 | EVID-009..011 | review | `.roles/` panel present and applied in stage reviews | REQ-009/010/011 | pass_with_risk |
+| EVID-PF-05 | policy check | `tests/check-first-public-run-release-boundary.ps1` plus `docs/adoption/first-public-run-release-boundary.md` | REQ-009/010/011 and `TARMAC-PF-05` | passed |
 | EVID-CR-001 | command | `cargo fmt --all -- --check` | CR-005 | passed |
 | EVID-CR-002 | command | `cargo clippy --workspace --all-targets -- -D warnings` | CR-005/006 | passed |
 | EVID-CR-003 | command | `cargo test --workspace --locked` (34 tests) | REQ-001..008/014/015/016, CR-004 | passed_fixture |
@@ -74,8 +75,8 @@ cargo run -p tarmac-cli -- --help
 
 | Gap | Impact | Disposition |
 |---|---|---|
-| No cited public aviation-network corpus has completed an L2 run. | Fixture evidence can be mistaken for a real market finding. | keep public claims gated behind cited corpus output + role review |
-| Review gate not yet exercised on a real corpus claim. | REQ-009/010/011 are process-verified, not outcome-verified. | accept risk until first corpus entry |
+| No cited public aviation-network corpus has completed an L2 run. | Fixture evidence can be mistaken for a real market finding. | mitigated by first public run release boundary; keep public claims gated behind cited corpus output + role review |
+| Review gate not yet exercised on a real corpus claim. | REQ-009/010/011 are process-verified, not outcome-verified. | `REQ-009..011 remain` pass_with_risk until first corpus entry records role dispositions |
 
 ## Role Review Notes
 

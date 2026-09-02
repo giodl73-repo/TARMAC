@@ -43,6 +43,13 @@ TARMAC is public and open to use as a reference model for aviation-network
 evidence discipline. To scope the first public run or contribute source
 surfaces, start with [`docs/adoption/README.md`](docs/adoption/README.md).
 
+Before any fixture-backed result becomes a public aviation finding, use the
+[`first public run release boundary`](docs/adoption/first-public-run-release-boundary.md).
+That boundary makes `TARMAC-PF-05` explicit: CLI help, seed fixtures, schemas,
+and workspace tests remain fixture-backed or scoping evidence only until a cited
+corpus, source manifest, tier/SLA run, scale-filtered gap, findings report,
+role dispositions, and downstream owner acceptance are recorded.
+
 ### Reuse boundary
 
 TARMAC is intentionally a domain-specific reference implementation, not a

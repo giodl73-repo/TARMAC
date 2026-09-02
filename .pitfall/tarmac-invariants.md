@@ -84,3 +84,25 @@ gate before public promotion.
 **Evidence:** `.roles/ROLE.md`, `docs/vtrace/VERIFICATION.md`, and
 `docs/adoption/first-public-run-worksheet.md`.
 
+## TARMAC-I-06: Fixture Evidence Is Not Public Aviation Evidence
+
+**Status:** VERIFIED
+
+**Claim:** Passing CLI help, workspace tests, seed fixtures, or source schemas
+cannot be promoted as a cited aviation-network finding until a bounded public
+run records source manifest, regeneration command, corpus artifact, tier/SLA
+artifact, scale-filtered gap artifact, findings report, held claims, role
+dispositions, and downstream owner acceptance.
+
+**Why it matters:** Fixture-backed implementation evidence can look like
+external aviation-system validation unless the first-public-run boundary remains
+visible.
+
+**Enforcement:** `TARMAC-PF-05` is guarded by the first public run release
+boundary, README/adoption/VTRACE wording, role gate, worksheet, and policy
+check.
+
+**Evidence:** `docs/adoption/first-public-run-release-boundary.md`,
+`docs/adoption/first-public-run-worksheet.md`, `README.md`,
+`docs/adoption/README.md`, `docs/vtrace/VERIFICATION.md`, `.roles/ROLE.md`, and
+`tests/check-first-public-run-release-boundary.ps1`.

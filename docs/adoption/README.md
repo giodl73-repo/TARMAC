@@ -33,6 +33,18 @@ exposure, hub concentration issue, or ground-access gap.
 The first run should prove the source-to-corpus-to-gap workflow, not settle an
 airspace, slot, route-award, airport-engineering, or procurement case.
 
+Before the run becomes a promoted public finding, complete the
+[`first public run release boundary`](first-public-run-release-boundary.md).
+`TARMAC-PF-05` blocks fixture evidence from becoming a cited aviation-network,
+delay, capacity, access, service adequacy, intervention, route-award, slot,
+engineering, procurement, regulatory, advocacy, or endorsement claim unless the
+release record includes source manifest, regeneration command, scale, market,
+operating basis, held claims, downstream owner acceptance, and dispositions from
+Aviation System Planner, Airport / Civil Engineer, Operations & ATC Reliability
+Officer, Aviation Economist, Regional-Access Advocate, Environmental & Community
+Advocate, Slot & Fortress-Hub Realist, Citation Auditor, Scope Keeper, and
+Numeracy Checker.
+
 ## Contribution Targets
 
 - public source inventories for delay, schedule, capacity, slot, route,

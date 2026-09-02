@@ -85,7 +85,7 @@ first public run validation.
 
 ## TARMAC-PF-05: Fixture Baseline Becomes Public Aviation Finding
 
-**Status:** OPEN
+**Status:** MITIGATED
 
 **Pattern:** Passing workspace tests, seed fixtures, source schema, or CLI help are treated
 as a cited end-to-end aviation-network finding.
@@ -98,8 +98,14 @@ to overread fixture evidence as external system validation.
 
 **Structural solution:** Keep first-public-run status open until one bounded source-backed
 corpus, source manifest, tier/SLA run, scale-filtered gap, findings report, and role review
-are published.
+are published. TARMAC now uses the first public run release boundary and
+`tests/check-first-public-run-release-boundary.ps1` to keep fixture-backed
+implementation evidence from becoming a public aviation finding until source
+manifest, regeneration command, scale, market, operating basis, artifacts, held
+claims, role dispositions, and downstream owner acceptance are visible.
 
 **Evidence:** `README.md`, `PRODUCT_PLAN.md`,
-`docs/adoption/first-public-run-worksheet.md`, and `docs/vtrace/VERIFICATION.md`.
-
+`docs/adoption/first-public-run-worksheet.md`,
+`docs/adoption/first-public-run-release-boundary.md`,
+`docs/vtrace/VERIFICATION.md`, `.roles/ROLE.md`, and
+`tests/check-first-public-run-release-boundary.ps1`.

@@ -35,3 +35,15 @@ sources:
 Keep engineering-study, procedure-design, environmental, slot-allocation,
 route-award, procurement, project-selection, and endorsement claims held unless
 separately source-backed and reviewed.
+
+## Release Boundary
+
+`TARMAC-PF-05` blocks this worksheet from becoming more than fixture-backed or
+scoping evidence until `first-public-run-release-boundary.md` is complete.
+Record the bounded question, source manifest, regeneration command, source
+owner, vintage, scale, market, demand basis, weather or operating basis, corpus
+artifact, tier/SLA artifact, scale-filtered gap artifact, findings report,
+allowed claim, blocked claims, held interpretations, parliament and editorial
+dispositions, and downstream owner acceptance before public promotion.
+
+Required review field: parliament and editorial dispositions.

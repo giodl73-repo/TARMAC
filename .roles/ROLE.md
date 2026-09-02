@@ -59,6 +59,14 @@ parliament and editorial.
 
 ---
 
+## PITFALL gates
+
+| Pitfall | Gate | Required roles |
+|---|---|---|
+| `TARMAC-PF-05` | First public run release boundary. Blocks fixture, CLI-help, seed-schema, or workspace-test evidence from promotion as a cited aviation-network finding, delay/capacity/access finding, engineering study, procedure design, slot allocation, route award, procurement plan, regulatory position, advocacy brief, or endorsement until source manifest, regeneration command, scale, market, operating basis, artifacts, held claims, role dispositions, and downstream owner acceptance are visible. | Aviation System Planner; Airport / Civil Engineer; Operations & ATC Reliability Officer; Aviation Economist; Regional-Access Advocate; Environmental & Community Advocate; Slot & Fortress-Hub Realist; Citation Auditor; Scope Keeper; Numeracy Checker |
+
+---
+
 ## How reviews are recorded
 
 When a `docs/vtrace/` deliverable, corpus entry, gap finding, design proposal, or tier/SLA
