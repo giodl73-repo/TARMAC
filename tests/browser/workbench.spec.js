@@ -28,7 +28,7 @@ test('loading and worker failure are readable',async({page})=>{
 
 test('keyboard, mobile and source/artifact routes work under TARMAC prefix',async({page})=>{
  const errors=[];page.on('pageerror',error=>errors.push(error.message));await page.setViewportSize({width:390,height:844});await ready(page);await page.locator('#compare').focus();await page.keyboard.press('Tab');await expect(page.locator('#reset')).toBeFocused();await page.keyboard.press('Enter');await expect(page.getByRole('status')).toContainText('Comparison ready');expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
- for(const file of ['pkg/tarmac_web.wasm','example.json','outage.json','LICENSE','THIRD-PARTY-LICENSES.txt','provenance.json'])expect((await page.request.get('/TARMAC/'+file)).ok()).toBe(true);expect(errors).toEqual([]);
+ for(const file of ['pkg/tarmac_web.wasm','example.json','outage.json','LICENSE','THIRD-PARTY-LICENSES.txt','provenance.json'])expect((await page.request.get('/TARMAC/'+file)).ok()).toBe(true);await expect(page.locator('#taxlane')).toHaveAttribute('href','https://giodl73-repo.github.io/TAXLANE/#evidence-transportation');expect(errors).toEqual([]);
 });
 
 test('a newly added node has an explicitly unavailable reset observation',async({page})=>{
