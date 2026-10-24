@@ -1,6 +1,6 @@
 # WP-WEB-001 — Synthetic regional route-connectivity task
 
-Status: accepted for bounded implementation, 2026-10-23. Owner objective:
+Status: implemented; local exit verified, 2026-10-23. Owner objective:
 deliver all sixteen TAXLANE satellites, including software publication.
 
 Select a fictional regional airport, change a route's operations-per-day input
@@ -61,3 +61,23 @@ and intermodal unknowns, deferred to the cited run. No critical/major actionable
 finding remains in this contract. Repeat role review at implementation exit;
 advance no canonical research or source-backed project hold. Commit/push child
 before scoped TRACKER pointer update.
+
+## Implementation exit
+
+All 37 native workspace tests, format and strict native Clippy pass. Seven
+actual-WASM Chromium cases pass: native canonical parity for reset/route-loss/
+changed examples, route controls, airport/hub selection, topology and all four
+metrics, independent nulls and closed authority in downloads, unknown/missing/
+mixed/oversized inputs, stale-result clearing, reset, loading/worker failure,
+keyboard/mobile/prefix, an added airport with null baseline, and singleton-hub
+centrality remaining null. Desktop and 390px screenshots inspected. Artifact is
+approximately 385 KB, including full upstream notices, below 5 MB.
+
+All seven Parliament and three editorial lenses repeat pass for this regional
+simulation. Resolved findings: prohibit parallel aggregate routes so normalized
+degree does not count duplicate airport pairs; distinguish topology and incident
+operations from actual itineraries/service; keep undefined centrality and absent
+reset observations null; retain all seven independent unknowns. Stakeholder
+defers remain with the first cited end-to-end aviation run. No critical/major
+actionable finding remains; no independent panel is claimed. Hosted native/WASM
+checks gate publication; TRACKER records exact live artifact and navigation.

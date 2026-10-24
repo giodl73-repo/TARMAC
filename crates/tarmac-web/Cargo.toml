@@ -1,0 +1,17 @@
+[package]
+name = "tarmac-web"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+
+[lib]
+crate-type = ["rlib", "cdylib"]
+
+[[bin]]
+name = "tarmac-browser"
+path = "src/main.rs"
+
+[dependencies]
+tarmac-network = { path = "../tarmac-network" }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
