@@ -1,4 +1,5 @@
-//! Synthetic regional graph-rating adapter. No hydraulic or rights determination.
+//! Independent frozen-source and synthetic regional aviation tasks.
+mod public_source;
 use serde::{Deserialize, Serialize};
 use std::collections::HashSet;
 use tarmac_network::{Airport, AirportRole, DemandBasis, Network, Route};
@@ -44,10 +45,14 @@ fn safe_id(text: &str) -> bool {
             .all(|c| c.is_ascii_alphanumeric() || b"-_".contains(&c))
 }
 
-/// Evaluate the native network's adjacent-capacity arithmetic only.
+/// Dispatch bounded source queries or evaluate the independent synthetic graph.
 pub fn evaluate(input: &str) -> Result<String, String> {
     if input.len() > MAX_INPUT_BYTES {
-        return Err("Use at most 64 KiB of synthetic graph JSON".into());
+        return Err("Use at most 64 KiB of query or graph JSON".into());
+    }
+    let envelope: serde_json::Value = serde_json::from_str(input).map_err(|e| e.to_string())?;
+    if envelope.get("view").is_some() {
+        return public_source::evaluate(input);
     }
     let input: Input = serde_json::from_str(input).map_err(|error| error.to_string())?;
     if input.scale != "regional"
