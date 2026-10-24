@@ -1,0 +1,55 @@
+{
+  "scale": "regional",
+  "jurisdiction": "fictional-cedar",
+  "comparison_window": "synthetic-peak-operations",
+  "selected_node": "community",
+  "hub": "hub",
+  "nodes": [
+    {
+      "id": "community",
+      "name": "Cedar-community",
+      "role": "Regional"
+    },
+    {
+      "id": "hub",
+      "name": "Cedar-hub",
+      "role": "Hub"
+    },
+    {
+      "id": "coast",
+      "name": "Cedar-coast",
+      "role": "Regional"
+    },
+    {
+      "id": "reliever",
+      "name": "Cedar-reliever",
+      "role": "Reliever"
+    }
+  ],
+  "links": [
+    {
+      "id": "community-hub",
+      "from": "community",
+      "to": "hub",
+      "ops_per_day": 12,
+      "basis": "Peak",
+      "enabled": false
+    },
+    {
+      "id": "hub-coast",
+      "from": "hub",
+      "to": "coast",
+      "ops_per_day": 40,
+      "basis": "Peak",
+      "enabled": true
+    },
+    {
+      "id": "hub-reliever",
+      "from": "hub",
+      "to": "reliever",
+      "ops_per_day": 16,
+      "basis": "Peak",
+      "enabled": true
+    }
+  ]
+}

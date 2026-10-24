@@ -39,6 +39,20 @@ boundary.
 
 ## Use TARMAC
 
+[Open the synthetic regional route workbench](https://giodl73-repo.github.io/TARMAC/):
+select a fictional airport, edit operations per day or disable a route, and
+compare incident routes, normalized degree and graph connectivity to a hub.
+The unchanged Rust network library executes locally in a worker. Topological
+connections do not establish a flight schedule, feasible itinerary, actual
+community access, delay or reliability; these remain explicitly unassessed.
+Inputs are not uploaded or stored. Results, fixtures and WASM are downloadable.
+
+Build: `python tools/build-pages.py` with Rust 1.95.0 and the WASM target.
+Verify: locked workspace tests and strict Clippy, `npm ci`,
+`npx playwright install chromium`, then `npm test`. Native replay:
+`cargo run -p tarmac-web --bin tarmac-browser -- fixtures/browser-reset.json`.
+See [WP-WEB-001](docs/vtrace/WP_WEB_001.md) for scope and role review.
+
 TARMAC is public and open to use as a reference model for aviation-network
 evidence discipline. To scope the first public run or contribute source
 surfaces, start with [`docs/adoption/README.md`](docs/adoption/README.md).
