@@ -1,0 +1,15 @@
+{
+  "url": "https://transtats.bts.gov/homedrillchart.asp",
+  "captured_at": "2026-10-24T15:49:23.531699+00:00",
+  "bytes": 158876,
+  "sha256": "47debd251c3513140e3fc72c87240867672a9f28c7b21cce0cf84d38b927ec20",
+  "method": "HTTPS GET; original response bytes; Mozilla/5.0 user agent",
+  "filters": {
+    "Airport": "All Airports",
+    "Carrier": "All Carriers",
+    "CboTime": "Year-To-Date",
+    "CboSelection": "Arrivals"
+  },
+  "window": "January-August",
+  "source_is_live_and_may_change": true
+}

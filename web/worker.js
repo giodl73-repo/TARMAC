@@ -1,7 +1,7 @@
 import config from './config.js';
 let engine;
 function evaluate(input){
- const bytes=new TextEncoder().encode(input);if(bytes.length>65536)throw Error('Use at most 64 KiB of synthetic aggregate rows');
+ const bytes=new TextEncoder().encode(input);if(bytes.length>65536)throw Error('Use at most 64 KiB of source-query or graph JSON');
  const pointer=engine.input_buffer(bytes.length);if(!pointer)throw Error('Input allocation failed');
  new Uint8Array(engine.memory.buffer,pointer,bytes.length).set(bytes);
  const output=engine.evaluate();return JSON.parse(new TextDecoder().decode(new Uint8Array(engine.memory.buffer,output,engine.output_length())));

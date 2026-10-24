@@ -39,7 +39,18 @@ boundary.
 
 ## Use TARMAC
 
-[Open the synthetic regional route workbench](https://giodl73-repo.github.io/TARMAC/):
+[Compare frozen BTS arrival outcomes](https://giodl73-repo.github.io/TARMAC/#bts-source):
+select two years from the captured January–August 2017–2026 summary and inspect
+published flight counts, rates and signed changes. The national reporting-carrier
+aggregate retains its exact window, original notes, selected filters and capture
+hash. Carrier coverage varies; no annualization, fixed-cohort performance claim,
+passenger itinerary or community-access inference follows. The source query runs
+in native Rust and actual WASM, independently of the fictional regional graph.
+See [source registry](data/sources.md) and [WP-WEB-002](docs/vtrace/WP_WEB_002.md).
+Verify custody with `python tools/bts_source.py`; native source replay:
+`cargo run -p tarmac-web --bin tarmac-browser -- fixtures/bts-query-recent.json`.
+
+[Open the independent synthetic regional route workbench](https://giodl73-repo.github.io/TARMAC/):
 select a fictional airport, edit operations per day or disable a route, and
 compare incident routes, normalized degree and graph connectivity to a hub.
 The unchanged Rust network library executes locally in a worker. Topological

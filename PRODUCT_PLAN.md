@@ -16,7 +16,10 @@ interventions only where evidence supports them.
 
 ## Current evidence
 
-The implementation and fixture baseline are complete. The first cited
+The implementation and fixture baseline are complete. A separate frozen-source
+explorer compares BTS January–August 2017–2026 reporting-carrier arrivals with
+original custody and changing-coverage limits. It does not calibrate the graph
+or advance dimension/tier/gap findings. The first cited
 end-to-end aviation-network run, source manifest, and findings report remain the
 next publication milestone.
 

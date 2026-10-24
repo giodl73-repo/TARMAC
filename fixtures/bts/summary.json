@@ -1,0 +1,229 @@
+{
+  "source_id": "bts-transtats-arrivals-2026-10-24",
+  "url": "https://transtats.bts.gov/homedrillchart.asp",
+  "window": "January-August",
+  "scale": "national",
+  "filters": {
+    "Airport": "All Airports",
+    "Carrier": "All Carriers",
+    "CboTime": "Year-To-Date",
+    "CboSelection": "Arrivals"
+  },
+  "captured_at": "2026-10-24T15:49:23.531699+00:00",
+  "raw_sha256": "47debd251c3513140e3fc72c87240867672a9f28c7b21cce0cf84d38b927ec20",
+  "notes": [
+    "* For purposes of this report, a flight is considered delayed if it arrived at (or departed) the gate 15 minutes or more after the scheduled arrival (departure) time as reflected in the Computerized Reservation System. ** The information is based on data submitted by reporting carriers. The number of reporting carriers varies as follows: 14 from 1987 to 1988, 13 in 1989, 12 from 1990 to 1991, 10 from 1992 to 1999, 11 in 2000, 12 in 2001, 10 in 2002, 18 in 2003, 19 in 2004, 20 from 2005 to 2008, 19 in 2009, 18 in 2010, 16 in 2011, 15 in 2012, 16 in 2013, 14 in 2014, 14 in 2015, 12 in 2016, 12 in 2017, 18 in 2018, 17 in 2019, 17 in 2020, 17 in 2021. (See Reporting Carriers by Year). In the dropdown list, All Major Carriers 1987-Present refers to the 10 major carriers that reported for all years or merged into another major carrier. They are Alaska Airlines, America West (merged into US Airways starting January 2006), American Airlines, Continental Airlines (merged into United Airlines starting January 2012), Delta Air Lines, Northwest Airlines (merged into Delta Air Lines starting January 2010), Southwest Airlines, Trans World Airways (merged into American Airlines starting January 2002), United Airlines, and US Airways (merged into American Airlines starting July 2015)."
+  ],
+  "rows": [
+    {
+      "year": 2017,
+      "published": [
+        "2,986,064",
+        "78.22%",
+        "764,933",
+        "20.04%",
+        "57,305",
+        "1.50%",
+        "9,428",
+        "3,817,730"
+      ],
+      "on_time": 2986064,
+      "on_time_percent_hundredths": 7822,
+      "delayed": 764933,
+      "delayed_percent_hundredths": 2004,
+      "cancelled": 57305,
+      "cancelled_percent_hundredths": 150,
+      "diverted": 9428,
+      "flight_operations": 3817730
+    },
+    {
+      "year": 2018,
+      "published": [
+        "3,785,575",
+        "78.47%",
+        "935,075",
+        "19.38%",
+        "90,916",
+        "1.88%",
+        "12,663",
+        "4,824,229"
+      ],
+      "on_time": 3785575,
+      "on_time_percent_hundredths": 7847,
+      "delayed": 935075,
+      "delayed_percent_hundredths": 1938,
+      "cancelled": 90916,
+      "cancelled_percent_hundredths": 188,
+      "diverted": 12663,
+      "flight_operations": 4824229
+    },
+    {
+      "year": 2019,
+      "published": [
+        "3,840,117",
+        "77.55%",
+        "988,043",
+        "19.95%",
+        "109,498",
+        "2.21%",
+        "14,170",
+        "4,951,828"
+      ],
+      "on_time": 3840117,
+      "on_time_percent_hundredths": 7755,
+      "delayed": 988043,
+      "delayed_percent_hundredths": 1995,
+      "cancelled": 109498,
+      "cancelled_percent_hundredths": 221,
+      "diverted": 14170,
+      "flight_operations": 4951828
+    },
+    {
+      "year": 2020,
+      "published": [
+        "2,688,753",
+        "82.04%",
+        "311,283",
+        "9.50%",
+        "271,488",
+        "8.28%",
+        "5,653",
+        "3,277,177"
+      ],
+      "on_time": 2688753,
+      "on_time_percent_hundredths": 8204,
+      "delayed": 311283,
+      "delayed_percent_hundredths": 950,
+      "cancelled": 271488,
+      "cancelled_percent_hundredths": 828,
+      "diverted": 5653,
+      "flight_operations": 3277177
+    },
+    {
+      "year": 2021,
+      "published": [
+        "3,078,715",
+        "81.17%",
+        "636,560",
+        "16.78%",
+        "67,803",
+        "1.79%",
+        "10,036",
+        "3,793,114"
+      ],
+      "on_time": 3078715,
+      "on_time_percent_hundredths": 8117,
+      "delayed": 636560,
+      "delayed_percent_hundredths": 1678,
+      "cancelled": 67803,
+      "cancelled_percent_hundredths": 179,
+      "diverted": 10036,
+      "flight_operations": 3793114
+    },
+    {
+      "year": 2022,
+      "published": [
+        "3,402,197",
+        "75.67%",
+        "951,181",
+        "21.16%",
+        "130,984",
+        "2.91%",
+        "11,477",
+        "4,495,839"
+      ],
+      "on_time": 3402197,
+      "on_time_percent_hundredths": 7567,
+      "delayed": 951181,
+      "delayed_percent_hundredths": 2116,
+      "cancelled": 130984,
+      "cancelled_percent_hundredths": 291,
+      "diverted": 11477,
+      "flight_operations": 4495839
+    },
+    {
+      "year": 2023,
+      "published": [
+        "3,433,646",
+        "75.54%",
+        "1,023,514",
+        "22.52%",
+        "75,616",
+        "1.66%",
+        "12,646",
+        "4,545,422"
+      ],
+      "on_time": 3433646,
+      "on_time_percent_hundredths": 7554,
+      "delayed": 1023514,
+      "delayed_percent_hundredths": 2252,
+      "cancelled": 75616,
+      "cancelled_percent_hundredths": 166,
+      "diverted": 12646,
+      "flight_operations": 4545422
+    },
+    {
+      "year": 2024,
+      "published": [
+        "3,549,382",
+        "75.28%",
+        "1,072,324",
+        "22.74%",
+        "79,752",
+        "1.69%",
+        "13,499",
+        "4,714,957"
+      ],
+      "on_time": 3549382,
+      "on_time_percent_hundredths": 7528,
+      "delayed": 1072324,
+      "delayed_percent_hundredths": 2274,
+      "cancelled": 79752,
+      "cancelled_percent_hundredths": 169,
+      "diverted": 13499,
+      "flight_operations": 4714957
+    },
+    {
+      "year": 2025,
+      "published": [
+        "3,540,121",
+        "75.64%",
+        "1,052,245",
+        "22.48%",
+        "73,590",
+        "1.57%",
+        "14,526",
+        "4,680,482"
+      ],
+      "on_time": 3540121,
+      "on_time_percent_hundredths": 7564,
+      "delayed": 1052245,
+      "delayed_percent_hundredths": 2248,
+      "cancelled": 73590,
+      "cancelled_percent_hundredths": 157,
+      "diverted": 14526,
+      "flight_operations": 4680482
+    },
+    {
+      "year": 2026,
+      "published": [
+        "3,523,047",
+        "74.50%",
+        "1,085,819",
+        "22.96%",
+        "103,925",
+        "2.20%",
+        "15,941",
+        "4,728,732"
+      ],
+      "on_time": 3523047,
+      "on_time_percent_hundredths": 7450,
+      "delayed": 1085819,
+      "delayed_percent_hundredths": 2296,
+      "cancelled": 103925,
+      "cancelled_percent_hundredths": 220,
+      "diverted": 15941,
+      "flight_operations": 4728732
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-name: TARMAC regional connectivity
+name: TARMAC source outcomes and regional connectivity
 on:
   pull_request:
   push:

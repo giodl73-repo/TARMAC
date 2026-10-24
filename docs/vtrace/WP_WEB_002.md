@@ -64,3 +64,25 @@ rate differences, never sum/average rates. Traveler, small-community, airline,
 airport-authority and cargo lenses retain distinct itinerary/access/fare/capacity/
 freight unknowns for the cited network run. No critical/major actionable contract
 finding remains. Repeat these lenses at implementation exit.
+
+## Implementation exit
+
+All 42 native workspace tests, formatting/check and strict native/wasm-target
+Clippy pass. Six new source browser cases and all seven graph regressions pass
+with actual WASM. Four native source references match executing WASM byte for
+byte, alongside the original three graph references. The source artifact is
+approximately 628 KB. Original HTML hash, selected filters, ten extracted rows,
+published rates and count reconciliation verify. Desktop and 390px mobile
+screenshots inspected; no viewport overflow.
+
+All seven Parliament and three editorial lenses repeat pass for this bounded
+source-exploration contract. Resolved findings: preserve the eight-month window
+in every comparison; retain changing-carrier and post-2021 coverage gaps; do not
+join national aggregates into regional routes; separate source/graph statuses
+and error clearing; retain signed percentage-point precision. Browser tests
+corrected a textContent/innerText assertion mismatch and Windows test-file
+encoding; neither altered source data or native arithmetic. All stakeholder
+defers remain with the cited network run. No critical/major actionable exit
+finding remains; these are implementing-agent reviews, not independent approval.
+Hosted checks gate publication. Exact live custody and TAXLANE roundtrip are
+recorded in TRACKER after child release, before its scoped pointer snapshot.
